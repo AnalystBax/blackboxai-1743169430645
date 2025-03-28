@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | SolarEco</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .cart-item:hover {
+            background-color: #f8fafc;
+        }
+        .quantity-btn {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #e2e8f0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="../index.html" class="flex items-center py-4 px-2">
+                            <i class="fas fa-solar-panel text-yellow-500 text-2xl mr-2"></i>
+                            <span class="font-semibold text-gray-900 text-lg">SolarEco</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="../index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300">Home</a>
+                        <a href="../products/catalog.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300">Products</a>
+                        <a href="../services/install.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300">Installation</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300">About Us</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="cart.html" class="py-2 px-2 text-yellow-500">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span class="cart-count bg-yellow-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center -mt-2 -mr-1">2</span>
+                    </a>
+                    <a href="#" class="py-2 px-2 text-gray-700 hover:text-yellow-500">
+                        <i class="fas fa-user text-xl"></i>
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Header -->
+    <div class="bg-yellow-50 py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-3xl font-bold mb-2">Your Shopping Cart</h1>
+            <div class="flex items-center text-gray-600">
+                <a href="../index.html" class="text-yellow-500 hover:underline">Home</a>
+                <span class="mx-2">/</span>
+                <a href="../products/catalog.html" class="text-yellow-500 hover:underline">Products</a>
+                <span class="mx-2">/</span>
+                <span>Cart</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Content -->
+    <div class="max-w-6xl mx-auto px-4 py-8">
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Cart Items -->
+            <div class="lg:w-2/3">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <!-- Cart Table Header -->
+                    <div class="hidden md:grid grid-cols-12 bg-gray-100 p-4 border-b">
+                        <div class="col-span-5 font-medium text-gray-700">Product</div>
+                        <div class="col-span-2 font-medium text-gray-700 text-center">Price</div>
+                        <div class="col-span-3 font-medium text-gray-700 text-center">Quantity</div>
+                        <div class="col-span-2 font-medium text-gray-700 text-right">Total</div>
+                    </div>
+
+                    <!-- Cart Items -->
+                    <!-- Item 1 -->
+                    <div class="cart-item p-4 border-b">
+                        <div class="flex flex-col md:flex-row md:items-center">
+                            <div class="md:w-5/12 flex items-center mb-4 md:mb-0">
+                                <button class="remove-item text-gray-400 hover:text-red-500 mr-4">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                                <img src="https://images.unsplash.com/photo-1508514177221-188e1eaf7083?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                                     alt="Solar Panel" class="w-20 h-20 object-cover rounded-lg mr-4">
+                                <div>
+                                    <h3 class="font-bold">SunPower X-Series</h3>
+                                    <p class="text-gray-600 text-sm">400W Monocrystalline</p>
+                                </div>
+                            </div>
+                            <div class="md:w-2/12 flex md:justify-center mb-4 md:mb-0">
+                                <span class="font-bold text-yellow-500">$299.99</span>
+                            </div>
+                            <div class="md:w-3/12 flex md:justify-center mb-4 md:mb-0">
+                                <div class="flex items-center border border-gray-300 rounded-lg">
+                                    <button class="quantity-btn decrease">-</button>
+                                    <input type="text" value="1" class="w-12 text-center border-x border-gray-300 py-1">
+                                    <button class="quantity-btn increase">+</button>
+                                </div>
+                            </div>
+                            <div class="md:w-2/12 flex md:justify-end">
+                                <span class="font-bold">$299.99</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="cart-item p-4">
+                        <div class="flex flex-col md:flex-row md:items-center">
+                            <div class="md:w-5/12 flex items-center mb-4 md:mb-0">
+                                <button class="remove-item text-gray-400 hover:text-red-500 mr-4">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                                <img src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                                     alt="Solar Inverter" class="w-20 h-20 object-cover rounded-lg mr-4">
+                                <div>
+                                    <h3 class="font-bold">Enphase IQ8+</h3>
+                                    <p class="text-gray-600 text-sm">Microinverter System</p>
+                                </div>
+                            </div>
+                            <div class="md:w-2/12 flex md:justify-center mb-4 md:mb-0">
+                                <span class="font-bold text-yellow-500">$1,199.99</span>
+                            </div>
+                            <div class="md:w-3/12 flex md:justify-center mb-4 md:mb-0">
+                                <div class="flex items-center border border-gray-300 rounded-lg">
+                                    <button class="quantity-btn decrease">-</button>
+                                    <input type="text" value="1" class="w-12 text-center border-x border-gray-300 py-1">
+                                    <button class="quantity-btn increase">+</button>
+                                </div>
+                            </div>
+                            <div class="md:w-2/12 flex md:justify-end">
+                                <span class="font-bold">$1,199.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coupon Code -->
+                <div class="bg-white rounded-lg shadow-md mt-4 p-4">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="w-full md:w-3/4 mb-4 md:mb-0">
+                            <input type="text" placeholder="Enter coupon code" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                        </div>
+                        <div class="w-full md:w-1/4 md:pl-4">
+                            <button class="w-full bg-gray-800 hover:bg-gray-900 text-white py-2 px-4 rounded-lg transition duration-300">
+                                Apply Coupon
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue Shopping -->
+                <div class="mt-4">
+                    <a href="../products/catalog.html" class="text-yellow-500 hover:underline flex items-center">
+                        <i class="fas fa-arrow-left mr-2"></i>
+                        Continue Shopping
+                    </a>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="lg:w-1/3">
+                <div class="bg-white rounded-lg shadow-md p-6 sticky top-4">
+                    <h2 class="text-xl font-bold mb-6">Order Summary</h2>
+                    <div class="space-y-4">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Subtotal</span>
+                            <span class="font-medium">$1,499.98</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Shipping</span>
+                            <span class="font-medium">$0.00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Tax</span>
+                            <span class="font-medium">$135.00</span>
+                        </div>
+                        <div class="border-t border-gray-200 pt-4">
+                            <div class="flex justify-between">
+                                <span class="font-bold">Total</span>
+                                <span class="font-bold text-yellow-500">$1,634.98</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Checkout Button -->
+                    <a href="checkout.html" class="block mt-6 w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-4 rounded-lg text-center transition duration-300">
+                        Proceed to Checkout
+                    </a>
+
+                    <!-- Payment Methods -->
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <h3 class="text-sm font-medium text-gray-600 mb-3">We Accept</h3>
+                        <div class="flex space-x-4">
+                            <i class="fab fa-cc-visa text-gray-400 text-2xl"></i>
+                            <i class="fab fa-cc-mastercard text-gray-400 text-2xl"></i>
+                            <i class="fab fa-cc-amex text-gray-400 text-2xl"></i>
+                            <i class="fab fa-cc-discover text-gray-400 text-2xl"></i>
+                            <i class="fab fa-cc-paypal text-gray-400 text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">SolarEco</h3>
+                <p class="text-gray-400">Providing high-quality solar components and professional installation services since 2015.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="../index.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Home</a></li>
+                    <li><a href="../products/catalog.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Products</a></li>
+                    <li><a href="../services/install.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Installation</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">About Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Contact</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><i class="fas fa-map-marker-alt mr-2 text-yellow-500"></i> 123 Solar Street, CA</li>
+                    <li><i class="fas fa-phone mr-2 text-yellow-500"></i> (555) 123-4567</li>
+                    <li><i class="fas fa-envelope mr-2 text-yellow-500"></i> info@solareco.com</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-linkedin-in text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2023 SolarEco. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Quantity adjustment
+        document.querySelectorAll('.quantity-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const input = this.parentElement.querySelector('input');
+                let value = parseInt(input.value);
+                
+                if (this.classList.contains('increase')) {
+                    value++;
+                } else if (this.classList.contains('decrease') && value > 1) {
+                    value--;
+                }
+                
+                input.value = value;
+                // In a real app, this would update the cart total
+            });
+        });
+
+        // Remove item
+        document.querySelectorAll('.remove-item').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.closest('.cart-item').remove();
+                // In a real app, this would update the cart count and total
+            });
+        });
+    </script>
+</body>
+</html>
