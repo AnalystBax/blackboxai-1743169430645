@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Installation | SolarEco</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .installation-hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .step-number {
+            width: 30px;
+            height: 30px;
+            background-color: #f59e0b;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="../index.html" class="flex items-center py-4 px-2">
+                            <i class="fas fa-solar-panel text-yellow-500 text-2xl mr-2"></i>
+                            <span class="font-semibold text-gray-900 text-lg">SolarEco</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="../index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300">Home</a>
+                        <a href="../products/catalog.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300">Products</a>
+                        <a href="install.html" class="py-4 px-2 text-yellow-500 border-b-4 border-yellow-500 font-semibold">Installation</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300">About Us</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="../cart/cart.html" class="py-2 px-2 text-gray-700 hover:text-yellow-500">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span class="cart-count bg-yellow-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center -mt-2 -mr-1">0</span>
+                    </a>
+                    <a href="#" class="py-2 px-2 text-gray-700 hover:text-yellow-500">
+                        <i class="fas fa-user text-xl"></i>
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="installation-hero h-64 flex items-center justify-center text-white">
+        <div class="text-center px-4">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Professional Solar Installation</h1>
+            <p class="text-lg">Get your solar system installed by certified technicians</p>
+        </div>
+    </div>
+
+    <!-- Installation Process -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-center mb-12">Our Installation Process</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Step 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="step-number">1</div>
+                    <h3 class="font-bold text-lg">Site Assessment</h3>
+                </div>
+                <p class="text-gray-600">Our technician will visit your property to evaluate roof condition, sun exposure, and electrical setup.</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="step-number">2</div>
+                    <h3 class="font-bold text-lg">System Design</h3>
+                </div>
+                <p class="text-gray-600">We'll create a custom solar system design optimized for your energy needs and property.</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="step-number">3</div>
+                    <h3 class="font-bold text-lg">Installation</h3>
+                </div>
+                <p class="text-gray-600">Our certified installers will complete the installation with minimal disruption to your home.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Form -->
+    <section class="bg-gray-100 py-12 px-4">
+        <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="bg-yellow-500 text-white py-4 px-6">
+                <h2 class="text-2xl font-bold">Get a Free Installation Quote</h2>
+                <p>Fill out this form and we'll contact you within 24 hours</p>
+            </div>
+            <form class="p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Personal Information -->
+                    <div class="md:col-span-2">
+                        <h3 class="font-bold text-lg mb-4 border-b pb-2">Personal Information</h3>
+                    </div>
+                    <div>
+                        <label for="first-name" class="block text-gray-700 font-medium mb-2">First Name *</label>
+                        <input type="text" id="first-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                    </div>
+                    <div>
+                        <label for="last-name" class="block text-gray-700 font-medium mb-2">Last Name *</label>
+                        <input type="text" id="last-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email *</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-gray-700 font-medium mb-2">Phone *</label>
+                        <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                    </div>
+
+                    <!-- Property Information -->
+                    <div class="md:col-span-2">
+                        <h3 class="font-bold text-lg mb-4 border-b pb-2">Property Information</h3>
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="address" class="block text-gray-700 font-medium mb-2">Address *</label>
+                        <input type="text" id="address" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                    </div>
+                    <div>
+                        <label for="city" class="block text-gray-700 font-medium mb-2">City *</label>
+                        <input type="text" id="city" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                    </div>
+                    <div>
+                        <label for="state" class="block text-gray-700 font-medium mb-2">State *</label>
+                        <select id="state" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                            <option value="">Select State</option>
+                            <option value="CA">California</option>
+                            <option value="TX">Texas</option>
+                            <option value="FL">Florida</option>
+                            <option value="NY">New York</option>
+                            <option value="AZ">Arizona</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="zip" class="block text-gray-700 font-medium mb-2">ZIP Code *</label>
+                        <input type="text" id="zip" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                    </div>
+                    <div>
+                        <label for="roof-type" class="block text-gray-700 font-medium mb-2">Roof Type *</label>
+                        <select id="roof-type" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                            <option value="">Select Roof Type</option>
+                            <option value="asphalt">Asphalt Shingle</option>
+                            <option value="metal">Metal</option>
+                            <option value="tile">Tile</option>
+                            <option value="flat">Flat</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="roof-age" class="block text-gray-700 font-medium mb-2">Roof Age (years) *</label>
+                        <input type="number" id="roof-age" min="0" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                    </div>
+
+                    <!-- Energy Usage -->
+                    <div class="md:col-span-2">
+                        <h3 class="font-bold text-lg mb-4 border-b pb-2">Energy Usage</h3>
+                    </div>
+                    <div>
+                        <label for="monthly-bill" class="block text-gray-700 font-medium mb-2">Average Monthly Electric Bill ($) *</label>
+                        <input type="number" id="monthly-bill" min="0" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                    </div>
+                    <div>
+                        <label for="system-size" class="block text-gray-700 font-medium mb-2">Desired System Size (kW)</label>
+                        <input type="number" id="system-size" min="0" step="0.1" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="notes" class="block text-gray-700 font-medium mb-2">Additional Notes</label>
+                        <textarea id="notes" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
+                    </div>
+                </div>
+
+                <div class="mt-8">
+                    <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                        Request Free Quote
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-center mb-12">Why Choose SolarEco Installation</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-award text-yellow-500 text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Certified Installers</h3>
+                <p class="text-gray-600">All our technicians are NABCEP certified with 5+ years of experience.</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-shield-alt text-yellow-500 text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2">25-Year Warranty</h3>
+                <p class="text-gray-600">Comprehensive warranty covering equipment and workmanship.</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-dollar-sign text-yellow-500 text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-lg mb-2">Financing Options</h3>
+                <p class="text-gray-600">Flexible payment plans and financing available.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">SolarEco</h3>
+                <p class="text-gray-400">Providing high-quality solar components and professional installation services since 2015.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="../index.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Home</a></li>
+                    <li><a href="../products/catalog.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Products</a></li>
+                    <li><a href="install.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Installation</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">About Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Contact</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><i class="fas fa-map-marker-alt mr-2 text-yellow-500"></i> 123 Solar Street, CA</li>
+                    <li><i class="fas fa-phone mr-2 text-yellow-500"></i> (555) 123-4567</li>
+                    <li><i class="fas fa-envelope mr-2 text-yellow-500"></i> info@solareco.com</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-linkedin-in text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2023 SolarEco. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real app, this would send the form data to a server
+            alert('Thank you for your installation request! We will contact you within 24 hours.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
