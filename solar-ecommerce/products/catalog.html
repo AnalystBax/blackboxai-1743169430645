@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Products | SolarEco</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .filter-btn.active {
+            background-color: #f59e0b;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="../index.html" class="flex items-center py-4 px-2">
+                            <i class="fas fa-solar-panel text-yellow-500 text-2xl mr-2"></i>
+                            <span class="font-semibold text-gray-900 text-lg">SolarEco</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="../index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300">Home</a>
+                        <a href="catalog.html" class="py-4 px-2 text-yellow-500 border-b-4 border-yellow-500 font-semibold">Products</a>
+                        <a href="../services/install.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300">Installation</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-500 transition duration-300">About Us</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="../cart/cart.html" class="py-2 px-2 text-gray-700 hover:text-yellow-500">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span class="cart-count bg-yellow-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center -mt-2 -mr-1">0</span>
+                    </a>
+                    <a href="#" class="py-2 px-2 text-gray-700 hover:text-yellow-500">
+                        <i class="fas fa-user text-xl"></i>
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Catalog Header -->
+    <div class="bg-yellow-50 py-12 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Solar Components Catalog</h1>
+            <p class="text-lg text-gray-600">Browse our selection of high-quality solar products</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Filters -->
+        <div class="mb-8">
+            <div class="flex flex-wrap gap-2 mb-4">
+                <button class="filter-btn px-4 py-2 bg-white border border-gray-300 rounded-full hover:bg-yellow-500 hover:text-white transition duration-300 active">
+                    All Products
+                </button>
+                <button class="filter-btn px-4 py-2 bg-white border border-gray-300 rounded-full hover:bg-yellow-500 hover:text-white transition duration-300">
+                    Solar Panels
+                </button>
+                <button class="filter-btn px-4 py-2 bg-white border border-gray-300 rounded-full hover:bg-yellow-500 hover:text-white transition duration-300">
+                    Inverters
+                </button>
+                <button class="filter-btn px-4 py-2 bg-white border border-gray-300 rounded-full hover:bg-yellow-500 hover:text-white transition duration-300">
+                    Batteries
+                </button>
+                <button class="filter-btn px-4 py-2 bg-white border border-gray-300 rounded-full hover:bg-yellow-500 hover:text-white transition duration-300">
+                    Mounting Systems
+                </button>
+            </div>
+            <div class="flex justify-between items-center">
+                <div>
+                    <span class="text-gray-600">Showing 12 of 36 products</span>
+                </div>
+                <div>
+                    <select class="bg-white border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                        <option>Sort by: Featured</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Customer Rating</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Product 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1508514177221-188e1eaf7083?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Solar Panel" class="w-full h-48 object-cover">
+                    <div class="absolute top-2 right-2 bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                        Best Seller
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">SunPower X-Series</h3>
+                            <p class="text-gray-600 text-sm">400W Monocrystalline</p>
+                        </div>
+                        <div class="flex items-center text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <span class="ml-1 text-gray-600">4.8</span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-400 line-through text-sm">$349.99</span>
+                                <span class="font-bold text-yellow-500 ml-2">$299.99</span>
+                            </div>
+                            <button class="add-to-cart bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-lg transition duration-300">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                     alt="Solar Inverter" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Enphase IQ8+</h3>
+                            <p class="text-gray-600 text-sm">Microinverter System</p>
+                        </div>
+                        <div class="flex items-center text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <span class="ml-1 text-gray-600">4.7</span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-yellow-500">$1,199.99</span>
+                            </div>
+                            <button class="add-to-cart bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-lg transition duration-300">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="https://images.unsplash.com/photo-1605980776566-0486c3ac7617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Solar Battery" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Tesla Powerwall 2</h3>
+                            <p class="text-gray-600 text-sm">13.5kWh Capacity</p>
+                        </div>
+                        <div class="flex items-center text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <span class="ml-1 text-gray-600">4.9</span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-yellow-500">$8,500.00</span>
+                            </div>
+                            <button class="add-to-cart bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-lg transition duration-300">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="https://images.unsplash.com/photo-1613665813446-82e79fbf9a1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                     alt="Solar Panel" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">LG NeON R</h3>
+                            <p class="text-gray-600 text-sm">380W Bifacial Panel</p>
+                        </div>
+                        <div class="flex items-center text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <span class="ml-1 text-gray-600">4.6</span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-yellow-500">$279.99</span>
+                            </div>
+                            <button class="add-to-cart bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-lg transition duration-300">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1605980776566-0486c3ac7617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Solar Battery" class="w-full h-48 object-cover">
+                    <div class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                        Sale
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Sonnen Eco 10</h3>
+                            <p class="text-gray-600 text-sm">10kWh Capacity</p>
+                        </div>
+                        <div class="flex items-center text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <span class="ml-1 text-gray-600">4.5</span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-gray-400 line-through text-sm">$9,999.99</span>
+                                <span class="font-bold text-yellow-500 ml-2">$7,999.99</span>
+                            </div>
+                            <button class="add-to-cart bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-lg transition duration-300">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="https://images.unsplash.com/photo-1605980776566-0486c3ac7617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Solar Mounting" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">IronRidge Roof Mount</h3>
+                            <p class="text-gray-600 text-sm">Complete Racking System</p>
+                        </div>
+                        <div class="flex items-center text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <span class="ml-1 text-gray-600">4.4</span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-yellow-500">$1,299.99</span>
+                            </div>
+                            <button class="add-to-cart bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-lg transition duration-300">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-12 flex justify-center">
+            <nav class="flex items-center space-x-2">
+                <a href="#" class="px-3 py-1 rounded-lg bg-yellow-500 text-white font-medium">1</a>
+                <a href="#" class="px-3 py-1 rounded-lg bg-white border border-gray-300 hover:bg-yellow-50 font-medium">2</a>
+                <a href="#" class="px-3 py-1 rounded-lg bg-white border border-gray-300 hover:bg-yellow-50 font-medium">3</a>
+                <a href="#" class="px-3 py-1 rounded-lg bg-white border border-gray-300 hover:bg-yellow-50 font-medium">Next →</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">SolarEco</h3>
+                <p class="text-gray-400">Providing high-quality solar components and professional installation services since 2015.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="../index.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Home</a></li>
+                    <li><a href="catalog.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Products</a></li>
+                    <li><a href="../services/install.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Installation</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">About Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Contact</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><i class="fas fa-map-marker-alt mr-2 text-yellow-500"></i> 123 Solar Street, CA</li>
+                    <li><i class="fas fa-phone mr-2 text-yellow-500"></i> (555) 123-4567</li>
+                    <li><i class="fas fa-envelope mr-2 text-yellow-500"></i> info@solareco.com</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-linkedin-in text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2023 SolarEco. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelector('.filter-btn.active').classList.remove('active');
+                this.classList.add('active');
+                // In a real app, this would filter the products
+            });
+        });
+
+        // Add to cart functionality
+        document.querySelectorAll('.add-to-cart').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const countElement = document.querySelector('.cart-count');
+                let count = parseInt(countElement.textContent);
+                countElement.textContent = count + 1;
+                // In a real app, this would add the product to a cart system
+            });
+        });
+    </script>
+</body>
+</html>
